@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="From America LLC – Software that's literally from America">
+  <title>From America LLC</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #111827;
+      --accent: #2563eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0.25rem auto;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>From America LLC</header>
+  <p>Software that's literally from America</p>
+  <p>
+    🌐 <a href="https://github.com/from-america">GitHub</a> ·
+    📧 <a href="mailto:ericspencer1450@gmail.com">ericspencer1450@gmail.com</a>
+  </p>
+
+  <p>
+    Meet the Founder: Eric
+  </p>
+  <p>
+    I'm just making this website so that From America has an online presence. Check out my non-business related ventures on my personal website: 
+    <a href="https://ericspencer00.github.io">ericspencer00.github.io</a>
+  </p>
+  
+  <footer>
+    © <span id="year"></span> From America LLC · All rights reserved.<br>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

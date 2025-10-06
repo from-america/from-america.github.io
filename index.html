@@ -10,6 +10,7 @@
       --bg: #f9fafb;
       --text: #111827;
       --accent: #2563eb;
+      --muted: #6b7280;
     }
 
     body {
@@ -20,10 +21,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
       text-align: center;
       line-height: 1.6;
+      padding: 2rem 1rem;
     }
 
     header {
@@ -37,6 +39,20 @@
       margin: 0.25rem auto;
     }
 
+    section {
+      margin-top: 2rem;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
     a {
       color: var(--accent);
       text-decoration: none;
@@ -47,31 +63,58 @@
       text-decoration: underline;
     }
 
+    .app-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .app-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
     footer {
-      margin-top: 2rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
-      color: #6b7280;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
   <header>From America LLC</header>
-  <p>Software that's literally from America</p>
+  <p>Software that's literally from America.</p>
+
   <p>
     🌐 <a href="https://github.com/from-america">GitHub</a> ·
     📧 <a href="mailto:ericspencer1450@gmail.com">ericspencer1450@gmail.com</a>
   </p>
 
-  <p>
-    Meet the Founder: Eric
-  </p>
-  <p>
-    I'm just making this website so that From America has an online presence. Check out my non-business related ventures on my personal website: 
-    <a href="https://ericspencer00.github.io">ericspencer00.github.io</a>
-  </p>
-  
+  <section>
+    <h2>Apps</h2>
+    <div class="app-card">
+      <h3><a href="https://ericspencer00.github.io/splithound-web/" target="_blank">SplitHound</a></h3>
+      <p>A modern expense tracker that makes splitting bills and managing group expenses effortless.</p>
+      <p><a href="https://ericspencer00.github.io/splithound-web/" target="_blank">→ Visit SplitHound</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p>Meet the Founder: Eric</p>
+    <p>
+      From America LLC creates thoughtful, simple software projects built entirely in the United States.
+      Learn more about Eric’s personal work at 
+      <a href="https://ericspencer00.github.io" target="_blank">ericspencer00.github.io</a>.
+    </p>
+  </section>
+
   <footer>
-    © <span id="year"></span> From America LLC · All rights reserved.<br>
+    © <span id="year"></span> From America LLC · All rights reserved.
   </footer>
 
   <script>

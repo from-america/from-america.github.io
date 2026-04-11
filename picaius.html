@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Instxnt.xyz – Visual store builder">
-  <title>Instxnt.xyz – Visual Store Builder</title>
+  <meta name="description" content="Picaius – Offline-first iOS photo editor">
+  <title>Picaius – Offline-First iOS Photo Editor</title>
   <style>
     :root {
       --bg: #f9fafb;
@@ -98,43 +98,44 @@
   </style>
 </head>
 <body>
-  <header>Instxnt.xyz</header>
-  <p class="subtitle">Visual store builder and API</p>
+  <header>Picaius</header>
+  <p class="subtitle">Fast, offline-first photo editor for iOS</p>
 
   <section>
-    <h2>What is Instxnt.xyz?</h2>
-    <p>Instxnt.xyz is a visual store builder. You sign in with Google, create a store from the dashboard, and configure things like Stripe Connect and a custom domain from a settings page. The frontend leans into a deliberate brutalist look — thick borders, hard shadows, monospace accents.</p>
+    <h2>What is Picaius?</h2>
+    <p>Picaius is a layer-based mobile photo editor for iPhone and iPad, available at <a href="https://picai.us" target="_blank">picai.us</a>. It's built offline-first — the core editing pipeline runs entirely on-device, with no server required. The architecture is GPU-first: layers are composited through Metal rather than stacked as image views.</p>
     <p>The project is currently an MVP.</p>
   </section>
 
   <section>
-    <h2>What's in the app</h2>
+    <h2>What it does</h2>
     <ul>
-      <li>Google sign-in via NextAuth v5</li>
-      <li>Dashboard for managing stores</li>
-      <li>Drag-and-drop upload flow with an AI generation progress UI</li>
-      <li>Rich text editing via TipTap</li>
-      <li>Settings: Stripe Connect, custom domain configuration</li>
-      <li>Billing page with subscription management</li>
-      <li>Responsive across desktop and mobile</li>
+      <li>Layer-based editing with Metal-accelerated GPU compositing</li>
+      <li>Real-time preview driven by DisplayLink (60 / 120 fps)</li>
+      <li>On-device background removal — uses iOS 17's <code>VNGenerateForegroundInstanceMaskRequest</code>, with a DeepLabV3 fallback on iOS 16</li>
+      <li>Perspective and warp transforms</li>
+      <li>Brush tools and text layers</li>
+      <li>Undo / redo with a command pattern (up to 50 steps)</li>
+      <li>Export to Photos</li>
+      <li>Custom <code>.pxproj</code> bundle format for saving projects</li>
+      <li>Face and object detection via the Vision framework</li>
     </ul>
   </section>
 
   <section>
     <h2>How it's built</h2>
     <ul>
-      <li>Turbo monorepo with <code>ui</code> and <code>api-worker</code> workspaces</li>
-      <li>Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS</li>
-      <li>Radix UI primitives, Framer Motion, @dnd-kit, Remotion</li>
-      <li>React Query for data fetching, Zod for validation</li>
-      <li>LibSQL / Turso for the database</li>
-      <li>Stripe for payments</li>
-      <li>Deployed to Cloudflare Workers via @opennextjs/cloudflare</li>
+      <li>Swift and SwiftUI, targeting iOS 16+</li>
+      <li>Metal for GPU rendering (<code>MTLTexture</code>, <code>MTLRenderCommandEncoder</code>)</li>
+      <li>Core Image (<code>CIContext</code>) and the Vision framework for image processing</li>
+      <li>Core ML for on-device inference</li>
+      <li>RevenueCat for the free tier and optional paid features</li>
+      <li>Companion web / API on Cloudflare Workers (Wrangler v4, TypeScript)</li>
     </ul>
   </section>
 
   <section class="link-section">
-    <p>Production: <a href="https://instxnt.xyz" target="_blank">instxnt.xyz</a> · Dev: <a href="https://instxnt.cc" target="_blank">instxnt.cc</a></p>
+    <p>Visit <a href="https://picai.us" target="_blank">picai.us</a></p>
   </section>
 
   <div class="back-link">

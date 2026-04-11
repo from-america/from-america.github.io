@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="StockGenie – Stock analysis and portfolio helper">
-  <title>StockGenie – Lightweight Stock Tools</title>
+  <meta name="description" content="StockGenie – AI-powered daily stock picks for iOS">
+  <title>StockGenie – Daily AI Stock Picks</title>
   <style>
     :root {
       --bg: #f9fafb;
@@ -65,6 +65,10 @@
       max-width: 700px;
     }
 
+    li {
+      margin: 0.5rem 0;
+    }
+
     .link-section {
       margin-top: 2rem;
       padding-top: 1.5rem;
@@ -95,27 +99,34 @@
 </head>
 <body>
   <header>StockGenie</header>
-  <p class="subtitle">Lightweight stock analysis & portfolio helper</p>
+  <p class="subtitle">AI-powered daily stock picks for iOS</p>
 
   <section>
     <h2>What is StockGenie?</h2>
-    <p>StockGenie is a compact web tool for hobby traders who want quick stock insights, portfolio tracking, and simple visualizations without the clutter of enterprise platforms.</p>
+    <p>StockGenie is a SwiftUI iPhone and iPad app that delivers a fresh set of AI-analyzed stock picks every trading day at 9:00 AM ET. A lightweight Cloudflare Worker backend pulls market data from Finnhub and Polygon and runs sentiment analysis through the HuggingFace Inference API.</p>
   </section>
 
   <section>
-    <h2>Key Features</h2>
+    <h2>Tiers</h2>
     <ul>
-      <li>Quick stock lookups and charting
-      </li>
-      <li>Simple portfolio tracking
-      </li>
-      <li>Lightweight, fast UI focused on usability
-      </li>
+      <li><strong>Free:</strong> the day's #1 pick, plus a 7-day history of past free picks</li>
+      <li><strong>Premium ($4.99 / month):</strong> all 5 daily picks and the full history view</li>
+      <li><strong>One-off ($0.99):</strong> unlock an extra pick without a subscription</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How it's built</h2>
+    <ul>
+      <li>iOS app written in Swift and SwiftUI</li>
+      <li>Backend on Cloudflare Workers (Node.js, deployed via Wrangler)</li>
+      <li>Sentiment via <code>@huggingface/inference</code>; market data via Finnhub and Polygon</li>
+      <li>Subscriptions handled with RevenueCat and StoreKit 2</li>
     </ul>
   </section>
 
   <section class="link-section">
-    <p>Open the live app: <a href="https://fromamerica-llc.com/stockgenie-web/" target="_blank">https://fromamerica-llc.com/stockgenie-web/</a></p>
+    <p>Marketing site: <a href="https://fromamerica-llc.com/stockgenie-web/" target="_blank">fromamerica-llc.com/stockgenie-web/</a></p>
   </section>
 
   <div class="back-link">

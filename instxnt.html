@@ -3,146 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Instxnt.xyz – Visual store builder">
-  <title>Instxnt.xyz – Visual Store Builder</title>
-  <style>
-    :root {
-      --bg: #f9fafb;
-      --text: #111827;
-      --accent: #2563eb;
-      --muted: #6b7280;
-      --light-gray: #e5e7eb;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 2rem 1rem;
-      line-height: 1.6;
-    }
-
-    header {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
-    section {
-      margin-top: 2rem;
-      max-width: 700px;
-      width: 100%;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-
-    p, li {
-      max-width: 700px;
-      text-align: left;
-      margin: 0.75rem auto;
-    }
-
-    ul {
-      text-align: left;
-      margin: 1rem auto;
-      padding-left: 1.5rem;
-      max-width: 700px;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    .link-section {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--light-gray);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .back-link {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--light-gray);
-    }
-
-    footer {
-      margin-top: 3rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="description" content="Instxnt.xyz — a visual store builder and API by FROM AMERICA LLC." />
+  <meta name="theme-color" content="#fafaf7" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <title>Instxnt.xyz — Visual Store Builder · FROM AMERICA LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header>Instxnt.xyz</header>
-  <p class="subtitle">Visual store builder and API</p>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="index.html" aria-label="From America LLC home">
+        <img src="assets/logo.png" alt="" />
+        <span class="nav-brand-mark">From America</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="https://instxnt.xyz" target="_blank" rel="noopener">
+        Visit instxnt.xyz
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
 
-  <section>
-    <h2>What is Instxnt.xyz?</h2>
-    <p>Instxnt.xyz is a visual store builder. You sign in with Google, create a store from the dashboard, and configure things like Stripe Connect and a custom domain from a settings page. The frontend leans into a deliberate brutalist look — thick borders, hard shadows, monospace accents.</p>
-    <p>The project is currently an MVP.</p>
-  </section>
+  <main>
+    <section class="subhero">
+      <div class="container">
+        <a class="subhero-back" href="index.html">← Back to FROM AMERICA</a>
+        <h1 class="subhero-title">Instxnt<em style="color:var(--accent);font-style:italic">.</em>xyz</h1>
+        <p class="subhero-tagline">A visual store builder and API for creators and small businesses.</p>
+        <div class="subhero-meta">
+          <span class="tag tag-accent">Web · MVP</span>
+          <span class="tag">Next.js 16</span>
+          <span class="tag">Cloudflare Workers</span>
+          <span class="tag">Stripe Connect</span>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>What's in the app</h2>
-    <ul>
-      <li>Google sign-in via NextAuth v5</li>
-      <li>Dashboard for managing stores</li>
-      <li>Drag-and-drop upload flow with an AI generation progress UI</li>
-      <li>Rich text editing via TipTap</li>
-      <li>Settings: Stripe Connect, custom domain configuration</li>
-      <li>Billing page with subscription management</li>
-      <li>Responsive across desktop and mobile</li>
-    </ul>
-  </section>
+    <section class="content">
+      <div class="container content-grid">
+        <aside class="toc" aria-label="On this page">
+          <h4>On this page</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#stack">How it's built</a></li>
+            <li><a href="#links">Links</a></li>
+          </ul>
+        </aside>
 
-  <section>
-    <h2>How it's built</h2>
-    <ul>
-      <li>Turbo monorepo with <code>ui</code> and <code>api-worker</code> workspaces</li>
-      <li>Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS</li>
-      <li>Radix UI primitives, Framer Motion, @dnd-kit, Remotion</li>
-      <li>React Query for data fetching, Zod for validation</li>
-      <li>LibSQL / Turso for the database</li>
-      <li>Stripe for payments</li>
-      <li>Deployed to Cloudflare Workers via @opennextjs/cloudflare</li>
-    </ul>
-  </section>
+        <div class="prose">
+          <h2 id="overview">Overview</h2>
+          <p>Instxnt.xyz is a visual store builder. You sign in with Google, create a store from the dashboard, and configure things like Stripe Connect and a custom domain from a settings page. The frontend leans into a deliberate brutalist look — thick borders, hard shadows, monospace accents.</p>
+          <p>The project is currently an MVP.</p>
 
-  <section class="link-section">
-    <p>Production: <a href="https://instxnt.xyz" target="_blank">instxnt.xyz</a> · Dev: <a href="https://instxnt.cc" target="_blank">instxnt.cc</a></p>
-  </section>
+          <h2 id="features">What's in the app</h2>
+          <ul>
+            <li>Google sign-in via NextAuth v5</li>
+            <li>Dashboard for managing stores</li>
+            <li>Drag-and-drop upload flow with an AI generation progress UI</li>
+            <li>Rich text editing via TipTap</li>
+            <li>Settings: Stripe Connect, custom domain configuration</li>
+            <li>Billing page with subscription management</li>
+            <li>Responsive across desktop and mobile</li>
+          </ul>
 
-  <div class="back-link">
-    <p><a href="index.html">← Back to FROM AMERICA LLC</a></p>
-  </div>
+          <h2 id="stack">How it's built</h2>
+          <ul>
+            <li>Turbo monorepo with <code>ui</code> and <code>api-worker</code> workspaces</li>
+            <li>Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS</li>
+            <li>Radix UI primitives, Framer Motion, @dnd-kit, Remotion</li>
+            <li>React Query for data fetching, Zod for validation</li>
+            <li>LibSQL / Turso for the database</li>
+            <li>Stripe for payments</li>
+            <li>Deployed to Cloudflare Workers via @opennextjs/cloudflare</li>
+          </ul>
 
-  <footer>
-    <p>FROM AMERICA LLC – Software that's literally from America</p>
+          <div class="link-block" id="links">
+            <div class="link-block-text">
+              Live &amp; Development
+              <strong>instxnt.xyz · instxnt.cc</strong>
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://instxnt.xyz" target="_blank" rel="noopener">
+                Production
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost" href="https://instxnt.cc" target="_blank" rel="noopener">Dev</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <img src="assets/logo.png" alt="" />
+            <span>From America</span>
+          </div>
+          <p class="footer-tag">Software that's literally from America. An independent studio building thoughtful products for the web and iOS.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Products</p>
+          <ul class="footer-list">
+            <li><a href="instxnt.html">instxnt.xyz</a></li>
+            <li><a href="stockgenie.html">Stock Genie</a></li>
+            <li><a href="picaius.html">Picaius</a></li>
+            <li><a href="freelock.html">FreeLock</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Studio</p>
+          <ul class="footer-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://ericspencer.us" target="_blank" rel="noopener">Founder</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Elsewhere</p>
+          <ul class="footer-list">
+            <li><a href="https://github.com/from-america" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="mailto:eric@fromamerica-llc.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© <span id="year"></span> From America LLC · All rights reserved</span>
+        <span>Made in the USA · MMXXIV</span>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

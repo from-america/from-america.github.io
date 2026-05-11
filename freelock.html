@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Picaius — an offline-first, layer-based iOS photo editor by FROM AMERICA LLC." />
+  <meta name="description" content="FreeLock — lock distracting apps behind a physical NFC card. By FROM AMERICA LLC." />
   <meta name="theme-color" content="#fafaf7" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <title>Picaius — Offline-First iOS Photo Editor · FROM AMERICA LLC</title>
+  <title>FreeLock — Lock your apps. Unlock your life. · FROM AMERICA LLC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -25,8 +25,8 @@
         <a href="index.html#about">About</a>
         <a href="index.html#contact">Contact</a>
       </nav>
-      <a class="nav-cta" href="https://picai.us" target="_blank" rel="noopener">
-        Visit picai.us
+      <a class="nav-cta" href="https://fromamerica-llc.com/FreeLock-web/" target="_blank" rel="noopener">
+        Visit FreeLock
         <span aria-hidden="true">→</span>
       </a>
     </div>
@@ -36,13 +36,13 @@
     <section class="subhero">
       <div class="container">
         <a class="subhero-back" href="index.html">← Back to FROM AMERICA</a>
-        <h1 class="subhero-title">Picaius</h1>
-        <p class="subhero-tagline">A fast, offline-first photo editor for iPhone and iPad.</p>
+        <h1 class="subhero-title">FreeLock</h1>
+        <p class="subhero-tagline">Lock your apps. Unlock your life. A focus tool built around physical NFC.</p>
         <div class="subhero-meta">
-          <span class="tag tag-accent">iOS · MVP</span>
+          <span class="tag tag-accent">iOS · Live</span>
           <span class="tag">Swift · SwiftUI</span>
-          <span class="tag">Metal</span>
-          <span class="tag">Core ML</span>
+          <span class="tag">NFC</span>
+          <span class="tag">Privacy-first</span>
         </div>
       </div>
     </section>
@@ -54,47 +54,37 @@
           <ul>
             <li><a href="#overview">Overview</a></li>
             <li><a href="#features">Features</a></li>
-            <li><a href="#stack">How it's built</a></li>
+            <li><a href="#privacy">Privacy</a></li>
             <li><a href="#links">Links</a></li>
           </ul>
         </aside>
 
         <div class="prose">
           <h2 id="overview">Overview</h2>
-          <p>Picaius is a layer-based mobile photo editor for iPhone and iPad, available at <a href="https://picai.us" target="_blank" rel="noopener">picai.us</a>. It's built offline-first — the core editing pipeline runs entirely on-device, with no server required. The architecture is GPU-first: layers are composited through Metal rather than stacked as image views.</p>
-          <p>The project is currently an MVP.</p>
+          <p>FreeLock is an iOS app that uses physical NFC cards to restrict access to distracting applications. You scan an NFC-enabled card — a hotel key, transit card, or any tag — as a physical key, then lock selected apps until you tap that same card to your iPhone again.</p>
+          <p>The idea is simple: when your focus tool requires a physical object, the friction is real. No willpower hacks, no in-app loopholes — just a tap.</p>
 
           <h2 id="features">What it does</h2>
           <ul>
-            <li>Layer-based editing with Metal-accelerated GPU compositing</li>
-            <li>Real-time preview driven by DisplayLink (60 / 120 fps)</li>
-            <li>On-device background removal — uses iOS 17's <code>VNGenerateForegroundInstanceMaskRequest</code>, with a DeepLabV3 fallback on iOS 16</li>
-            <li>Perspective and warp transforms</li>
-            <li>Brush tools and text layers</li>
-            <li>Undo / redo with a command pattern (up to 50 steps)</li>
-            <li>Export to Photos</li>
-            <li>Custom <code>.pxproj</code> bundle format for saving projects</li>
-            <li>Face and object detection via the Vision framework</li>
+            <li>Block access to specified apps until an NFC card is tapped to the device</li>
+            <li>Quick setup using any NFC card you already own</li>
+            <li>Emergency unlock via biometrics with a mandatory delay</li>
+            <li>Optional accountability — notify trusted contacts when emergency unlocks occur</li>
+            <li>Battery-efficient background operation</li>
+            <li>Native iOS experience built with SwiftUI</li>
           </ul>
 
-          <h2 id="stack">How it's built</h2>
-          <ul>
-            <li>Swift and SwiftUI, targeting iOS 16+</li>
-            <li>Metal for GPU rendering (<code>MTLTexture</code>, <code>MTLRenderCommandEncoder</code>)</li>
-            <li>Core Image (<code>CIContext</code>) and the Vision framework for image processing</li>
-            <li>Core ML for on-device inference</li>
-            <li>RevenueCat for the free tier and optional paid features</li>
-            <li>Companion web / API on Cloudflare Workers (Wrangler v4, TypeScript)</li>
-          </ul>
+          <h2 id="privacy">Privacy</h2>
+          <p>FreeLock stores all data locally on your device. There are no accounts, no tracking, and no cloud sync. The studio's stance is that a focus tool should never become the thing distracting you.</p>
 
           <div class="link-block" id="links">
             <div class="link-block-text">
               On the web
-              <strong>picai.us</strong>
+              <strong>fromamerica-llc.com/FreeLock-web</strong>
             </div>
             <div class="cta-row">
-              <a class="btn btn-primary" href="https://picai.us" target="_blank" rel="noopener">
-                Visit picai.us
+              <a class="btn btn-primary" href="https://fromamerica-llc.com/FreeLock-web/" target="_blank" rel="noopener">
+                Visit FreeLock
                 <span class="btn-arrow" aria-hidden="true">→</span>
               </a>
             </div>

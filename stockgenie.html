@@ -3,138 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="StockGenie – AI-powered daily stock picks for iOS">
-  <title>StockGenie – Daily AI Stock Picks</title>
-  <style>
-    :root {
-      --bg: #f9fafb;
-      --text: #111827;
-      --accent: #2563eb;
-      --muted: #6b7280;
-      --light-gray: #e5e7eb;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 2rem 1rem;
-      line-height: 1.6;
-    }
-
-    header {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
-    section {
-      margin-top: 2rem;
-      max-width: 700px;
-      width: 100%;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-
-    p, li {
-      max-width: 700px;
-      text-align: left;
-      margin: 0.75rem auto;
-    }
-
-    ul {
-      text-align: left;
-      margin: 1rem auto;
-      padding-left: 1.5rem;
-      max-width: 700px;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    .link-section {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--light-gray);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .back-link {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--light-gray);
-    }
-
-    footer {
-      margin-top: 3rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="description" content="Stock Genie — AI-powered daily stock picks for iOS, by FROM AMERICA LLC." />
+  <meta name="theme-color" content="#fafaf7" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <title>Stock Genie — Daily AI Stock Picks · FROM AMERICA LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header>StockGenie</header>
-  <p class="subtitle">AI-powered daily stock picks for iOS</p>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="index.html" aria-label="From America LLC home">
+        <img src="assets/logo.png" alt="" />
+        <span class="nav-brand-mark">From America</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="https://stockgenie.app" target="_blank" rel="noopener">
+        Visit stockgenie.app
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
 
-  <section>
-    <h2>What is StockGenie?</h2>
-    <p>StockGenie is a SwiftUI iPhone and iPad app that delivers a fresh set of AI-analyzed stock picks every trading day at 9:00 AM ET. A lightweight Cloudflare Worker backend pulls market data from Finnhub and Polygon and runs sentiment analysis through the HuggingFace Inference API.</p>
-  </section>
+  <main>
+    <section class="subhero">
+      <div class="container">
+        <a class="subhero-back" href="index.html">← Back to FROM AMERICA</a>
+        <h1 class="subhero-title">Stock Genie</h1>
+        <p class="subhero-tagline">AI-powered daily stock picks, delivered every trading day at 9:00 AM ET.</p>
+        <div class="subhero-meta">
+          <span class="tag tag-accent">iOS · Live</span>
+          <span class="tag">Swift · SwiftUI</span>
+          <span class="tag">Cloudflare Workers</span>
+          <span class="tag">HuggingFace</span>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Tiers</h2>
-    <ul>
-      <li><strong>Free:</strong> the day's #1 pick, plus a 7-day history of past free picks</li>
-      <li><strong>Premium ($4.99 / month):</strong> all 5 daily picks and the full history view</li>
-      <li><strong>One-off ($0.99):</strong> unlock an extra pick without a subscription</li>
-    </ul>
-  </section>
+    <section class="content">
+      <div class="container content-grid">
+        <aside class="toc" aria-label="On this page">
+          <h4>On this page</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#tiers">Tiers</a></li>
+            <li><a href="#stack">How it's built</a></li>
+            <li><a href="#links">Links</a></li>
+          </ul>
+        </aside>
 
-  <section>
-    <h2>How it's built</h2>
-    <ul>
-      <li>iOS app written in Swift and SwiftUI</li>
-      <li>Backend on Cloudflare Workers (Node.js, deployed via Wrangler)</li>
-      <li>Sentiment via <code>@huggingface/inference</code>; market data via Finnhub and Polygon</li>
-      <li>Subscriptions handled with RevenueCat and StoreKit 2</li>
-    </ul>
-  </section>
+        <div class="prose">
+          <h2 id="overview">Overview</h2>
+          <p>Stock Genie is a SwiftUI iPhone and iPad app that delivers a fresh set of AI-analyzed stock picks every trading day at 9:00 AM ET. A lightweight Cloudflare Worker backend pulls market data from Finnhub and Polygon and runs sentiment analysis through the HuggingFace Inference API.</p>
 
-  <section class="link-section">
-    <p>Marketing site: <a href="https://fromamerica-llc.com/stockgenie-web/" target="_blank">fromamerica-llc.com/stockgenie-web/</a></p>
-  </section>
+          <h2 id="tiers">Tiers</h2>
+          <ul>
+            <li><strong>Free</strong> — the day's #1 pick, plus a 7-day history of past free picks</li>
+            <li><strong>Premium ($4.99 / month)</strong> — all 5 daily picks and the full history view</li>
+            <li><strong>One-off ($0.99)</strong> — unlock an extra pick without a subscription</li>
+          </ul>
 
-  <div class="back-link">
-    <p><a href="index.html">← Back to FROM AMERICA LLC</a></p>
-  </div>
+          <h2 id="stack">How it's built</h2>
+          <ul>
+            <li>iOS app written in Swift and SwiftUI</li>
+            <li>Backend on Cloudflare Workers (Node.js, deployed via Wrangler)</li>
+            <li>Sentiment via <code>@huggingface/inference</code>; market data via Finnhub and Polygon</li>
+            <li>Subscriptions handled with RevenueCat and StoreKit 2</li>
+          </ul>
 
-  <footer>
-    <p>FROM AMERICA LLC – Software that's literally from America</p>
+          <div class="link-block" id="links">
+            <div class="link-block-text">
+              On the web
+              <strong>stockgenie.app</strong>
+            </div>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://stockgenie.app" target="_blank" rel="noopener">
+                Visit stockgenie.app
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost" href="https://fromamerica-llc.com/stockgenie-web/" target="_blank" rel="noopener">Marketing site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <img src="assets/logo.png" alt="" />
+            <span>From America</span>
+          </div>
+          <p class="footer-tag">Software that's literally from America. An independent studio building thoughtful products for the web and iOS.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Products</p>
+          <ul class="footer-list">
+            <li><a href="instxnt.html">instxnt.xyz</a></li>
+            <li><a href="stockgenie.html">Stock Genie</a></li>
+            <li><a href="picaius.html">Picaius</a></li>
+            <li><a href="freelock.html">FreeLock</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Studio</p>
+          <ul class="footer-list">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://ericspencer.us" target="_blank" rel="noopener">Founder</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Elsewhere</p>
+          <ul class="footer-list">
+            <li><a href="https://github.com/from-america" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="mailto:eric@fromamerica-llc.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© <span id="year"></span> From America LLC · All rights reserved</span>
+        <span>Made in the USA · MMXXIV</span>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

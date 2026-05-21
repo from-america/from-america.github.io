@@ -3,266 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FROM AMERICA LLC — an independent software studio building thoughtful tools for the web and iOS. Crafted in the United States." />
-  <meta name="theme-color" content="#fafaf7" />
-  <meta property="og:title" content="FROM AMERICA LLC — Software, crafted in America." />
-  <meta property="og:description" content="An independent software studio building thoughtful tools for the web and iOS." />
+  <meta name="description" content="FROM AMERICA LLC — an independent software studio shipping a small number of careful products for iOS and the web." />
+  <meta name="theme-color" content="#f3efe5" />
+  <meta property="og:title" content="FROM AMERICA LLC — Software, literally from America." />
+  <meta property="og:description" content="An independent software studio shipping a small number of careful products for iOS and the web." />
   <meta property="og:image" content="assets/logo.png" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <title>FROM AMERICA LLC — Software, crafted in America.</title>
+  <title>FROM AMERICA LLC — Software, literally from America.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="nav-brand" href="#top" aria-label="From America LLC home">
-        <img src="assets/logo.png" alt="" />
-        <span class="nav-brand-mark">From America</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="mailto:eric@fromamerica-llc.com">
-        Get in touch
-        <span aria-hidden="true">→</span>
-      </a>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="header-mark" href="#top" aria-label="From America LLC, home">
+          <img src="assets/logo.png" alt="" class="header-logo" />
+          <span class="header-name">From America</span>
+          <span class="header-suffix">LLC</span>
+        </a>
+        <span class="header-rule" aria-hidden="true"></span>
+        <a class="header-action" href="mailto:eric@fromamerica-llc.com">
+          Get in touch
+          <span class="ico" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero -->
+
     <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <span class="eyebrow">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
-            Independent Software Studio · Est. 2025
-          </span>
-          <h1 class="headline">
-            Software,<br />
-            <em>crafted</em> in America.
-          </h1>
-          <p class="lede">
-            FROM AMERICA LLC is a small, independent studio designing and building thoughtful products for the web and iOS — shipped one careful release at a time.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#products">
-              See our products
-              <span class="btn-arrow" aria-hidden="true">→</span>
+      <div class="container">
+        <p class="hero-kicker">
+          <span class="kicker-mark" aria-hidden="true"></span>
+          Independent software studio · United States · 2025
+        </p>
+        <h1 class="hero-statement">
+          Software,<br />
+          literally<br />
+          from America.
+        </h1>
+        <p class="hero-lede">
+          FROM AMERICA LLC is a small studio designing and shipping a careful number of products for iOS and the web. One founder. No venture capital. One quiet release at a time.
+        </p>
+      </div>
+    </section>
+
+    <section class="meta-strip" aria-label="Studio at a glance">
+      <div class="container">
+        <dl class="meta-grid">
+          <div>
+            <dt>Founded</dt>
+            <dd>2025</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>United States</dd>
+          </div>
+          <div>
+            <dt>Team</dt>
+            <dd>One founder</dd>
+          </div>
+          <div>
+            <dt>Practice</dt>
+            <dd>iOS · Web · APIs</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="index" id="work">
+      <div class="container">
+        <header class="index-head">
+          <p class="kicker"><span class="kicker-sigil">§</span> Index of work</p>
+          <h2 class="h2">Four useful things, owned end&#8209;to&#8209;end.</h2>
+        </header>
+
+        <ol class="works">
+
+          <li class="work">
+            <a class="work-link" href="instxnt.html" aria-label="instxnt.xyz — a visual store builder">
+              <span class="work-num">01</span>
+              <span class="work-row">
+                <span class="work-name">instxnt.xyz</span>
+                <span class="work-tags">Web · MVP · 2025</span>
+              </span>
+              <span class="work-desc">A visual store builder and API for creators and small businesses. Drag-and-drop, AI-assisted, Stripe-ready.</span>
+              <span class="work-arrow" aria-hidden="true">→</span>
             </a>
-            <a class="btn btn-ghost" href="#about">About the studio</a>
-          </div>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-mark">
-            <img src="assets/logo.png" alt="" />
-            <div class="hero-mark-tag">
-              <span>Monogram · A/X</span>
-              <span>USA · MMXXV</span>
-            </div>
-          </div>
-        </div>
+          </li>
+
+          <li class="work">
+            <a class="work-link" href="stockgenie.html" aria-label="Stock Genie — AI-powered daily stock picks">
+              <span class="work-num">02</span>
+              <span class="work-row">
+                <span class="work-name">Stock Genie</span>
+                <span class="work-tags">iOS · Live · 2025</span>
+              </span>
+              <span class="work-desc">A fresh set of AI-analyzed stock picks every trading day at 9:00 AM ET. Lightweight, focused, made for hobby traders.</span>
+              <span class="work-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+
+          <li class="work">
+            <a class="work-link" href="picaius.html" aria-label="Picaius — an offline-first iOS photo editor">
+              <span class="work-num">03</span>
+              <span class="work-row">
+                <span class="work-name">Picaius</span>
+                <span class="work-tags">iOS · MVP · 2025</span>
+              </span>
+              <span class="work-desc">A fast, layer-based mobile photo editor. GPU-accelerated, runs entirely on-device, with real undo/redo and project files.</span>
+              <span class="work-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+
+          <li class="work">
+            <a class="work-link" href="freelock.html" aria-label="FreeLock — focus tool with physical NFC cards">
+              <span class="work-num">04</span>
+              <span class="work-row">
+                <span class="work-name">FreeLock</span>
+                <span class="work-tags">iOS · Live · 2024</span>
+              </span>
+              <span class="work-desc">A focus tool that uses physical NFC cards to keep distracting apps locked until you tap your card back to the phone.</span>
+              <span class="work-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+
+        </ol>
       </div>
     </section>
 
-    <!-- Stat strip -->
-    <section class="strip" aria-label="At a glance">
+    <section class="founder" id="about">
       <div class="container">
-        <div class="strip-inner">
-          <div class="strip-cell">
-            <span class="strip-num">04</span>
-            <span class="strip-label">Products shipped</span>
+        <div class="founder-grid">
+          <div class="founder-text">
+            <p class="kicker"><span class="kicker-sigil">§</span> From the founder</p>
+            <p>I'm Eric Spencer. FROM AMERICA LLC is my small studio — one person, no venture capital, no five-year roadmap. The work is iOS apps, web tools, and the occasional API. The goal is to ship a small number of careful things and stand behind them.</p>
+            <p>Each product is owned end-to-end: design, engineering, infrastructure, and support, by the same hands that conceived it. The throughline is the same across all of them — real problems, careful craft, and the patience to do a small number of things well.</p>
+            <p>If something here is useful to you, or you have a project worth making, I'd like to hear about it.</p>
+            <p class="founder-sign">— Eric</p>
           </div>
-          <div class="strip-cell">
-            <span class="strip-num">iOS &amp; Web</span>
-            <span class="strip-label">Platforms</span>
-          </div>
-          <div class="strip-cell">
-            <span class="strip-num">100%</span>
-            <span class="strip-label">Built in the USA</span>
-          </div>
-          <div class="strip-cell">
-            <span class="strip-num">01</span>
-            <span class="strip-label">Founder, focused</span>
-          </div>
+
+          <dl class="founder-register">
+            <div>
+              <dt>Founded</dt>
+              <dd>2025 · United States</dd>
+            </div>
+            <div>
+              <dt>Founder</dt>
+              <dd>Eric Spencer · <a href="https://ericspencer.us" target="_blank" rel="noopener">ericspencer.us</a></dd>
+            </div>
+            <div>
+              <dt>Practice</dt>
+              <dd>Design, engineering &amp; product</dd>
+            </div>
+            <div>
+              <dt>Platforms</dt>
+              <dd>iOS · Web · APIs</dd>
+            </div>
+            <div>
+              <dt>Open source</dt>
+              <dd><a href="https://github.com/from-america" target="_blank" rel="noopener">github.com/from-america</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:eric@fromamerica-llc.com">eric@fromamerica-llc.com</a></dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <!-- Products -->
-    <section class="section" id="products">
+    <section class="closing" id="contact">
       <div class="container">
-        <div class="section-head">
-          <span class="section-kicker">— Our work</span>
-          <h2 class="section-title">A small catalogue of <em>useful</em> things.</h2>
-          <p class="section-sub">Each product is owned end-to-end — design, engineering, infrastructure, and support — by the same hands that conceived it.</p>
-        </div>
-
-        <div class="products">
-          <a class="product" href="instxnt.html">
-            <div class="product-head">
-              <span class="product-tag">Web · MVP</span>
-              <span class="product-arrow" aria-hidden="true">→</span>
-            </div>
-            <h3 class="product-name">instxnt.xyz</h3>
-            <p class="product-sub">Visual store builder &amp; API</p>
-            <p class="product-desc">A no-code storebuilder for creators and small businesses. Drag-and-drop, AI-assisted, Stripe-ready.</p>
-            <div class="product-foot">
-              <span>instxnt.xyz</span>
-              <span class="product-link">Read more</span>
-            </div>
-          </a>
-
-          <a class="product" href="stockgenie.html">
-            <div class="product-head">
-              <span class="product-tag">iOS · Live</span>
-              <span class="product-arrow" aria-hidden="true">→</span>
-            </div>
-            <h3 class="product-name">Stock Genie</h3>
-            <p class="product-sub">AI-powered daily stock picks</p>
-            <p class="product-desc">A fresh set of AI-analyzed picks every trading day at 9:00 AM ET. Lightweight, focused, and made for hobby traders.</p>
-            <div class="product-foot">
-              <span>stockgenie.app</span>
-              <span class="product-link">Read more</span>
-            </div>
-          </a>
-
-          <a class="product" href="picaius.html">
-            <div class="product-head">
-              <span class="product-tag">iOS · MVP</span>
-              <span class="product-arrow" aria-hidden="true">→</span>
-            </div>
-            <h3 class="product-name">Picaius</h3>
-            <p class="product-sub">Offline-first photo editor</p>
-            <p class="product-desc">A fast, layer-based mobile photo editor. GPU-accelerated, runs entirely on-device, with real undo/redo and project files.</p>
-            <div class="product-foot">
-              <span>picai.us</span>
-              <span class="product-link">Read more</span>
-            </div>
-          </a>
-
-          <a class="product" href="freelock.html">
-            <div class="product-head">
-              <span class="product-tag">iOS · Live</span>
-              <span class="product-arrow" aria-hidden="true">→</span>
-            </div>
-            <h3 class="product-name">FreeLock</h3>
-            <p class="product-sub">Lock your apps. Unlock your life.</p>
-            <p class="product-desc">A focus tool that uses physical NFC cards to keep distracting apps locked until you tap your card back to the phone.</p>
-            <div class="product-foot">
-              <span>fromamerica-llc.com/FreeLock-web</span>
-              <span class="product-link">Read more</span>
-            </div>
-          </a>
-        </div>
+        <p class="closing-kicker"><span class="kicker-sigil">§</span> Get in touch</p>
+        <a class="closing-link" href="mailto:eric@fromamerica-llc.com">
+          eric@fromamerica-llc.com
+          <span class="ico" aria-hidden="true">↗</span>
+        </a>
+        <p class="closing-sub">
+          Or visit <a href="https://github.com/from-america" target="_blank" rel="noopener">github.com/from-america</a> &mdash; the studio takes a small number of collaborations each year.
+        </p>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="about section" id="about">
-      <div class="container about-grid">
-        <div class="about-text">
-          <span class="section-kicker">— The studio</span>
-          <p class="about-quote">A small studio, making software the slow way.</p>
-          <p>FROM AMERICA LLC is an independent practice founded by Eric Spencer. The studio designs and ships thoughtful, simple software — entirely in the United States, entirely without venture capital.</p>
-          <p>Our products span web and iOS, but the throughline is the same: real problems, careful craft, and the patience to do a small number of things well.</p>
-          <p class="about-signature">— Eric</p>
-        </div>
-        <div class="about-meta">
-          <div class="about-meta-row">
-            <span class="about-meta-label">Founded</span>
-            <span class="about-meta-val">2025 · United States</span>
-          </div>
-          <div class="about-meta-row">
-            <span class="about-meta-label">Founder</span>
-            <span class="about-meta-val">
-              Eric Spencer · <a href="https://ericspencer.us" target="_blank" rel="noopener">ericspencer.us</a>
-            </span>
-          </div>
-          <div class="about-meta-row">
-            <span class="about-meta-label">Practice</span>
-            <span class="about-meta-val">Design, engineering &amp; product</span>
-          </div>
-          <div class="about-meta-row">
-            <span class="about-meta-label">Platforms</span>
-            <span class="about-meta-val">iOS · Web · APIs</span>
-          </div>
-          <div class="about-meta-row">
-            <span class="about-meta-label">Open source</span>
-            <span class="about-meta-val">
-              <a href="https://github.com/from-america" target="_blank" rel="noopener">github.com/from-america</a>
-            </span>
-          </div>
-          <div class="about-meta-row">
-            <span class="about-meta-label">Contact</span>
-            <span class="about-meta-val">
-              <a href="mailto:eric@fromamerica-llc.com">eric@fromamerica-llc.com</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA band -->
-    <section class="cta-band" id="contact">
-      <div class="cta-band-inner">
-        <h2>Have an idea worth <em>making</em>?</h2>
-        <p>We take on a small number of collaborations and consulting engagements each year. If you're working on something interesting, we'd love to hear about it.</p>
-        <div class="cta-row" style="justify-content:center">
-          <a class="btn btn-primary" href="mailto:eric@fromamerica-llc.com">
-            Start a conversation
-            <span class="btn-arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="btn btn-ghost" href="https://github.com/from-america" target="_blank" rel="noopener">View on GitHub</a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-brand-row">
-            <img src="assets/logo.png" alt="" />
-            <span>From America</span>
+      <div class="footer-inner">
+
+        <div class="footer-mark">
+          <div class="footer-mark-row">
+            <img src="assets/logo.png" alt="" class="footer-logo" />
+            <span class="footer-mark-name">From America LLC</span>
           </div>
-          <p class="footer-tag">Software that's literally from America. An independent studio building thoughtful products for the web and iOS.</p>
+          <p class="footer-tagline">Software that's literally from America.</p>
         </div>
-        <div>
-          <p class="footer-col-title">Products</p>
-          <ul class="footer-list">
-            <li><a href="instxnt.html">instxnt.xyz</a></li>
-            <li><a href="stockgenie.html">Stock Genie</a></li>
-            <li><a href="picaius.html">Picaius</a></li>
-            <li><a href="freelock.html">FreeLock</a></li>
-          </ul>
+
+        <div class="footer-colophon">
+          <p class="footer-colophon-title">§ Colophon</p>
+          <p>This page is set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono, served as static HTML and CSS. No frameworks, no analytics, no trackers. <span style="color:var(--mute-2)">Designed and built in 2025 by the studio.</span></p>
         </div>
-        <div>
-          <p class="footer-col-title">Studio</p>
-          <ul class="footer-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://ericspencer.us" target="_blank" rel="noopener">Founder</a></li>
-          </ul>
+
+        <div class="footer-stamp-wrap" aria-label="Made in the United States of America, 2025">
+          <span class="stamp">
+            <span class="stamp-star" aria-hidden="true">★</span>
+            <span>Made in</span>
+            <span class="stamp-strong">USA</span>
+            <span class="stamp-divider" aria-hidden="true"></span>
+            <span>MMXXV</span>
+          </span>
         </div>
-        <div>
-          <p class="footer-col-title">Elsewhere</p>
-          <ul class="footer-list">
-            <li><a href="https://github.com/from-america" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="mailto:eric@fromamerica-llc.com">Email</a></li>
-          </ul>
-        </div>
+
       </div>
+
       <div class="footer-meta">
         <span>© <span id="year"></span> From America LLC · All rights reserved</span>
-        <span>Made in the USA · MMXXV</span>
+        <span>fromamerica-llc.com</span>
       </div>
     </div>
   </footer>

@@ -4,67 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="FreeLock — lock distracting apps behind a physical NFC card. By FROM AMERICA LLC." />
-  <meta name="theme-color" content="#fafaf7" />
+  <meta name="theme-color" content="#f3efe5" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
   <title>FreeLock — Lock your apps. Unlock your life. · FROM AMERICA LLC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="nav-brand" href="index.html" aria-label="From America LLC home">
-        <img src="assets/logo.png" alt="" />
-        <span class="nav-brand-mark">From America</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html#products">Products</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="https://fromamerica-llc.com/FreeLock-web/" target="_blank" rel="noopener">
-        Visit FreeLock
-        <span aria-hidden="true">→</span>
-      </a>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="header-mark" href="index.html" aria-label="From America LLC, home">
+          <img src="assets/logo.png" alt="" class="header-logo" />
+          <span class="header-name">From America</span>
+          <span class="header-suffix">LLC</span>
+        </a>
+        <span class="header-rule" aria-hidden="true"></span>
+        <a class="header-action" href="mailto:eric@fromamerica-llc.com">
+          Get in touch
+          <span class="ico" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="subhero">
+    <section class="sub">
       <div class="container">
-        <a class="subhero-back" href="index.html">← Back to FROM AMERICA</a>
-        <h1 class="subhero-title">FreeLock</h1>
-        <p class="subhero-tagline">Lock your apps. Unlock your life. A focus tool built around physical NFC.</p>
-        <div class="subhero-meta">
-          <span class="tag tag-accent">iOS · Live</span>
-          <span class="tag">Swift · SwiftUI</span>
-          <span class="tag">NFC</span>
-          <span class="tag">Privacy-first</span>
+        <a class="sub-back" href="index.html">
+          <span aria-hidden="true">←</span>
+          Back to Index
+        </a>
+
+        <div class="sub-hero">
+          <p class="sub-hero-kicker">
+            <span class="sigil">No. 04</span>
+            <span class="sep" aria-hidden="true"></span>
+            iOS Application
+            <span class="sep" aria-hidden="true"></span>
+            Live · 2024
+          </p>
+          <h1 class="sub-title">FreeLock</h1>
+          <p class="sub-tagline">Lock your apps. Unlock your life. A focus tool built around physical NFC.</p>
+          <div class="sub-tags">
+            <span class="tag is-status">iOS · Live</span>
+            <span class="tag">Swift · SwiftUI</span>
+            <span class="tag">NFC</span>
+            <span class="tag">Privacy-first</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content">
-      <div class="container content-grid">
-        <aside class="toc" aria-label="On this page">
-          <h4>On this page</h4>
-          <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#privacy">Privacy</a></li>
-            <li><a href="#links">Links</a></li>
-          </ul>
-        </aside>
-
+    <section class="sub-content">
+      <div class="container">
         <div class="prose">
-          <h2 id="overview">Overview</h2>
+
+          <h2>Overview</h2>
           <p>FreeLock is an iOS app that uses physical NFC cards to restrict access to distracting applications. You scan an NFC-enabled card — a hotel key, transit card, or any tag — as a physical key, then lock selected apps until you tap that same card to your iPhone again.</p>
           <p>The idea is simple: when your focus tool requires a physical object, the friction is real. No willpower hacks, no in-app loopholes — just a tap.</p>
 
-          <h2 id="features">What it does</h2>
+          <h2>What it does</h2>
           <ul>
             <li>Block access to specified apps until an NFC card is tapped to the device</li>
             <li>Quick setup using any NFC card you already own</li>
@@ -74,64 +77,57 @@
             <li>Native iOS experience built with SwiftUI</li>
           </ul>
 
-          <h2 id="privacy">Privacy</h2>
+          <h2>Privacy</h2>
           <p>FreeLock stores all data locally on your device. There are no accounts, no tracking, and no cloud sync. The studio's stance is that a focus tool should never become the thing distracting you.</p>
 
-          <div class="link-block" id="links">
-            <div class="link-block-text">
+          <div class="sub-links" id="links">
+            <div class="sub-links-text">
               On the web
               <strong>fromamerica-llc.com/FreeLock-web</strong>
             </div>
-            <div class="cta-row">
+            <div class="sub-links-row">
               <a class="btn btn-primary" href="https://fromamerica-llc.com/FreeLock-web/" target="_blank" rel="noopener">
                 Visit FreeLock
-                <span class="btn-arrow" aria-hidden="true">→</span>
+                <span class="ico" aria-hidden="true">→</span>
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-brand-row">
-            <img src="assets/logo.png" alt="" />
-            <span>From America</span>
+      <div class="footer-inner">
+        <div class="footer-mark">
+          <div class="footer-mark-row">
+            <img src="assets/logo.png" alt="" class="footer-logo" />
+            <span class="footer-mark-name">From America LLC</span>
           </div>
-          <p class="footer-tag">Software that's literally from America. An independent studio building thoughtful products for the web and iOS.</p>
+          <p class="footer-tagline">Software that's literally from America.</p>
         </div>
-        <div>
-          <p class="footer-col-title">Products</p>
-          <ul class="footer-list">
-            <li><a href="instxnt.html">instxnt.xyz</a></li>
-            <li><a href="stockgenie.html">Stock Genie</a></li>
-            <li><a href="picaius.html">Picaius</a></li>
-            <li><a href="freelock.html">FreeLock</a></li>
-          </ul>
+
+        <div class="footer-colophon">
+          <p class="footer-colophon-title">§ Colophon</p>
+          <p>This page is set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono, served as static HTML and CSS. No frameworks, no analytics, no trackers.</p>
         </div>
-        <div>
-          <p class="footer-col-title">Studio</p>
-          <ul class="footer-list">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="https://ericspencer.us" target="_blank" rel="noopener">Founder</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-col-title">Elsewhere</p>
-          <ul class="footer-list">
-            <li><a href="https://github.com/from-america" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="mailto:eric@fromamerica-llc.com">Email</a></li>
-          </ul>
+
+        <div class="footer-stamp-wrap" aria-label="Made in the United States of America, 2025">
+          <span class="stamp">
+            <span class="stamp-star" aria-hidden="true">★</span>
+            <span>Made in</span>
+            <span class="stamp-strong">USA</span>
+            <span class="stamp-divider" aria-hidden="true"></span>
+            <span>MMXXV</span>
+          </span>
         </div>
       </div>
+
       <div class="footer-meta">
         <span>© <span id="year"></span> From America LLC · All rights reserved</span>
-        <span>Made in the USA · MMXXIV</span>
+        <span>fromamerica-llc.com</span>
       </div>
     </div>
   </footer>

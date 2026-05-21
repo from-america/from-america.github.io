@@ -4,73 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Stock Genie — AI-powered daily stock picks for iOS, by FROM AMERICA LLC." />
-  <meta name="theme-color" content="#fafaf7" />
+  <meta name="theme-color" content="#f3efe5" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
   <title>Stock Genie — Daily AI Stock Picks · FROM AMERICA LLC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="nav-brand" href="index.html" aria-label="From America LLC home">
-        <img src="assets/logo.png" alt="" />
-        <span class="nav-brand-mark">From America</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html#products">Products</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="https://stockgenie.app" target="_blank" rel="noopener">
-        Visit stockgenie.app
-        <span aria-hidden="true">→</span>
-      </a>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="header-mark" href="index.html" aria-label="From America LLC, home">
+          <img src="assets/logo.png" alt="" class="header-logo" />
+          <span class="header-name">From America</span>
+          <span class="header-suffix">LLC</span>
+        </a>
+        <span class="header-rule" aria-hidden="true"></span>
+        <a class="header-action" href="mailto:eric@fromamerica-llc.com">
+          Get in touch
+          <span class="ico" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="subhero">
+    <section class="sub">
       <div class="container">
-        <a class="subhero-back" href="index.html">← Back to FROM AMERICA</a>
-        <h1 class="subhero-title">Stock Genie</h1>
-        <p class="subhero-tagline">AI-powered daily stock picks, delivered every trading day at 9:00 AM ET.</p>
-        <div class="subhero-meta">
-          <span class="tag tag-accent">iOS · Live</span>
-          <span class="tag">Swift · SwiftUI</span>
-          <span class="tag">Cloudflare Workers</span>
-          <span class="tag">HuggingFace</span>
+        <a class="sub-back" href="index.html">
+          <span aria-hidden="true">←</span>
+          Back to Index
+        </a>
+
+        <div class="sub-hero">
+          <p class="sub-hero-kicker">
+            <span class="sigil">No. 02</span>
+            <span class="sep" aria-hidden="true"></span>
+            iOS Application
+            <span class="sep" aria-hidden="true"></span>
+            Live · 2025
+          </p>
+          <h1 class="sub-title">Stock Genie</h1>
+          <p class="sub-tagline">AI-powered daily stock picks, delivered every trading day at 9:00 AM ET.</p>
+          <div class="sub-tags">
+            <span class="tag is-status">iOS · Live</span>
+            <span class="tag">Swift · SwiftUI</span>
+            <span class="tag">Cloudflare Workers</span>
+            <span class="tag">HuggingFace</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content">
-      <div class="container content-grid">
-        <aside class="toc" aria-label="On this page">
-          <h4>On this page</h4>
-          <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#tiers">Tiers</a></li>
-            <li><a href="#stack">How it's built</a></li>
-            <li><a href="#links">Links</a></li>
-          </ul>
-        </aside>
-
+    <section class="sub-content">
+      <div class="container">
         <div class="prose">
-          <h2 id="overview">Overview</h2>
+
+          <h2>Overview</h2>
           <p>Stock Genie is a SwiftUI iPhone and iPad app that delivers a fresh set of AI-analyzed stock picks every trading day at 9:00 AM ET. A lightweight Cloudflare Worker backend pulls market data from Finnhub and Polygon and runs sentiment analysis through the HuggingFace Inference API.</p>
 
-          <h2 id="tiers">Tiers</h2>
+          <h2>Tiers</h2>
           <ul>
             <li><strong>Free</strong> — the day's #1 pick, plus a 7-day history of past free picks</li>
             <li><strong>Premium ($4.99 / month)</strong> — all 5 daily picks and the full history view</li>
             <li><strong>One-off ($0.99)</strong> — unlock an extra pick without a subscription</li>
           </ul>
 
-          <h2 id="stack">How it's built</h2>
+          <h2>How it's built</h2>
           <ul>
             <li>iOS app written in Swift and SwiftUI</li>
             <li>Backend on Cloudflare Workers (Node.js, deployed via Wrangler)</li>
@@ -78,62 +81,55 @@
             <li>Subscriptions handled with RevenueCat and StoreKit 2</li>
           </ul>
 
-          <div class="link-block" id="links">
-            <div class="link-block-text">
+          <div class="sub-links" id="links">
+            <div class="sub-links-text">
               On the web
               <strong>stockgenie.app</strong>
             </div>
-            <div class="cta-row">
+            <div class="sub-links-row">
               <a class="btn btn-primary" href="https://stockgenie.app" target="_blank" rel="noopener">
                 Visit stockgenie.app
-                <span class="btn-arrow" aria-hidden="true">→</span>
+                <span class="ico" aria-hidden="true">→</span>
               </a>
-              <a class="btn btn-ghost" href="https://fromamerica-llc.com/stockgenie-web/" target="_blank" rel="noopener">Marketing site</a>
+              <a class="btn" href="https://fromamerica-llc.com/stockgenie-web/" target="_blank" rel="noopener">Marketing site</a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-brand-row">
-            <img src="assets/logo.png" alt="" />
-            <span>From America</span>
+      <div class="footer-inner">
+        <div class="footer-mark">
+          <div class="footer-mark-row">
+            <img src="assets/logo.png" alt="" class="footer-logo" />
+            <span class="footer-mark-name">From America LLC</span>
           </div>
-          <p class="footer-tag">Software that's literally from America. An independent studio building thoughtful products for the web and iOS.</p>
+          <p class="footer-tagline">Software that's literally from America.</p>
         </div>
-        <div>
-          <p class="footer-col-title">Products</p>
-          <ul class="footer-list">
-            <li><a href="instxnt.html">instxnt.xyz</a></li>
-            <li><a href="stockgenie.html">Stock Genie</a></li>
-            <li><a href="picaius.html">Picaius</a></li>
-            <li><a href="freelock.html">FreeLock</a></li>
-          </ul>
+
+        <div class="footer-colophon">
+          <p class="footer-colophon-title">§ Colophon</p>
+          <p>This page is set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono, served as static HTML and CSS. No frameworks, no analytics, no trackers.</p>
         </div>
-        <div>
-          <p class="footer-col-title">Studio</p>
-          <ul class="footer-list">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="https://ericspencer.us" target="_blank" rel="noopener">Founder</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-col-title">Elsewhere</p>
-          <ul class="footer-list">
-            <li><a href="https://github.com/from-america" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="mailto:eric@fromamerica-llc.com">Email</a></li>
-          </ul>
+
+        <div class="footer-stamp-wrap" aria-label="Made in the United States of America, 2025">
+          <span class="stamp">
+            <span class="stamp-star" aria-hidden="true">★</span>
+            <span>Made in</span>
+            <span class="stamp-strong">USA</span>
+            <span class="stamp-divider" aria-hidden="true"></span>
+            <span>MMXXV</span>
+          </span>
         </div>
       </div>
+
       <div class="footer-meta">
         <span>© <span id="year"></span> From America LLC · All rights reserved</span>
-        <span>Made in the USA · MMXXIV</span>
+        <span>fromamerica-llc.com</span>
       </div>
     </div>
   </footer>

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Picaius — an offline-first, layer-based iOS photo editor by FROM AMERICA LLC." />
+  <meta name="description" content="Picaius — a pro-level offline photo editor for iPhone and iPad. By FROM AMERICA LLC." />
   <meta name="theme-color" content="#f3efe5" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <title>Picaius — Offline-First iOS Photo Editor · FROM AMERICA LLC</title>
+  <title>Picaius — A real photo editor that lives on your phone · FROM AMERICA LLC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -43,17 +43,18 @@
           <p class="sub-hero-kicker">
             <span class="sigil">No. 03</span>
             <span class="sep" aria-hidden="true"></span>
-            iOS Application
+            For iPhone &amp; iPad
             <span class="sep" aria-hidden="true"></span>
             MVP · 2025
           </p>
           <h1 class="sub-title">Picaius</h1>
-          <p class="sub-tagline">A fast, offline-first photo editor for iPhone and iPad.</p>
+          <p class="sub-tagline">A pro-level photo editor that lives entirely on your phone. Real layers. Real brushes. Real undo. Fast on a plane, private on a couch.</p>
           <div class="sub-tags">
-            <span class="tag is-status">iOS · MVP</span>
-            <span class="tag">Swift · SwiftUI</span>
-            <span class="tag">Metal</span>
-            <span class="tag">Core ML</span>
+            <span class="tag is-status">MVP</span>
+            <span class="tag">Layers</span>
+            <span class="tag">Offline</span>
+            <span class="tag">Private</span>
+            <span class="tag">No accounts</span>
           </div>
         </div>
       </div>
@@ -63,41 +64,31 @@
       <div class="container">
         <div class="prose">
 
-          <h2>Overview</h2>
-          <p>Picaius is a layer-based mobile photo editor for iPhone and iPad, available at <a href="https://picai.us" target="_blank" rel="noopener">picai.us</a>. It's built offline-first — the core editing pipeline runs entirely on-device, with no server required. The architecture is GPU-first: layers are composited through Metal rather than stacked as image views.</p>
-          <p>The project is currently an MVP.</p>
+          <h2>The editor, but on your phone</h2>
+          <p>Picaius is what a real photo editor feels like when it shrinks to a handset. Layers stack. Brushes pressure-respond. Transforms snap. Undo goes back fifty steps. Open it once, work for an hour, never touch a sign-in screen.</p>
 
-          <h2>What it does</h2>
+          <h2>What you can do</h2>
           <ul>
-            <li>Layer-based editing with Metal-accelerated GPU compositing</li>
-            <li>Real-time preview driven by DisplayLink (60 / 120 fps)</li>
-            <li>On-device background removal — uses iOS 17's <code>VNGenerateForegroundInstanceMaskRequest</code>, with a DeepLabV3 fallback on iOS 16</li>
-            <li>Perspective and warp transforms</li>
-            <li>Brush tools and text layers</li>
-            <li>Undo / redo with a command pattern (up to 50 steps)</li>
-            <li>Export to Photos</li>
-            <li>Custom <code>.pxproj</code> bundle format for saving projects</li>
-            <li>Face and object detection via the Vision framework</li>
+            <li>Build compositions in layers — stack, mask, blend</li>
+            <li>One-tap subject cut-outs that actually look clean</li>
+            <li>Perspective and warp transforms for posters, mockups, edits</li>
+            <li>Brush tools and text layers, with pressure where the device supports it</li>
+            <li>Up to fifty steps of undo / redo — really undo, not "remove last filter"</li>
+            <li>Save your work as a project and pick it back up tomorrow</li>
+            <li>Export the final to Photos at full quality</li>
           </ul>
 
-          <h2>How it's built</h2>
-          <ul>
-            <li>Swift and SwiftUI, targeting iOS 16+</li>
-            <li>Metal for GPU rendering (<code>MTLTexture</code>, <code>MTLRenderCommandEncoder</code>)</li>
-            <li>Core Image (<code>CIContext</code>) and the Vision framework for image processing</li>
-            <li>Core ML for on-device inference</li>
-            <li>RevenueCat for the free tier and optional paid features</li>
-            <li>Companion web / API on Cloudflare Workers (Wrangler v4, TypeScript)</li>
-          </ul>
+          <h2>Why offline matters</h2>
+          <p>Your photos stay on your device. Nothing uploads. Nothing trains on your work. The editor is just as fast on a plane as it is at your desk, and there is no quota waiting to throttle you on the day you finally have time to sit down with it.</p>
 
           <div class="sub-links" id="links">
             <div class="sub-links-text">
-              On the web
+              Visit
               <strong>picai.us</strong>
             </div>
             <div class="sub-links-row">
               <a class="btn btn-primary" href="https://picai.us" target="_blank" rel="noopener">
-                Visit picai.us
+                Open Picaius
                 <span class="ico" aria-hidden="true">→</span>
               </a>
             </div>
@@ -121,7 +112,7 @@
 
         <div class="footer-colophon">
           <p class="footer-colophon-title">§ Colophon</p>
-          <p>This page is set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono, served as static HTML and CSS. No frameworks, no analytics, no trackers.</p>
+          <p>Set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono. No tracking, no analytics — just words on a page.</p>
         </div>
 
         <div class="footer-stamp-wrap" aria-label="Made in the United States of America, 2025">

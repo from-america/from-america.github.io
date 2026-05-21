@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stock Genie — AI-powered daily stock picks for iOS, by FROM AMERICA LLC." />
+  <meta name="description" content="Stock Genie — a daily, AI-curated stock-picks app for iPhone. Quiet, opinionated, made for hobby traders. By FROM AMERICA LLC." />
   <meta name="theme-color" content="#f3efe5" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <title>Stock Genie — Daily AI Stock Picks · FROM AMERICA LLC</title>
+  <title>Stock Genie — A fresh batch of picks every trading day · FROM AMERICA LLC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -43,17 +43,17 @@
           <p class="sub-hero-kicker">
             <span class="sigil">No. 02</span>
             <span class="sep" aria-hidden="true"></span>
-            iOS Application
+            For iPhone
             <span class="sep" aria-hidden="true"></span>
             Live · 2025
           </p>
           <h1 class="sub-title">Stock Genie</h1>
-          <p class="sub-tagline">AI-powered daily stock picks, delivered every trading day at 9:00 AM ET.</p>
+          <p class="sub-tagline">A fresh batch of AI-curated stock picks every trading day at 9:00 AM Eastern. Quiet, opinionated, made for hobby traders.</p>
           <div class="sub-tags">
-            <span class="tag is-status">iOS · Live</span>
-            <span class="tag">Swift · SwiftUI</span>
-            <span class="tag">Cloudflare Workers</span>
-            <span class="tag">HuggingFace</span>
+            <span class="tag is-status">Live</span>
+            <span class="tag">Daily picks</span>
+            <span class="tag">9 AM ET</span>
+            <span class="tag">Free &amp; Premium</span>
           </div>
         </div>
       </div>
@@ -63,35 +63,34 @@
       <div class="container">
         <div class="prose">
 
-          <h2>Overview</h2>
-          <p>Stock Genie is a SwiftUI iPhone and iPad app that delivers a fresh set of AI-analyzed stock picks every trading day at 9:00 AM ET. A lightweight Cloudflare Worker backend pulls market data from Finnhub and Polygon and runs sentiment analysis through the HuggingFace Inference API.</p>
+          <h2>What it does</h2>
+          <p>Every trading day, just before the bell, Stock Genie publishes a new set of picks with the reasoning shown up front — what's moving the stock, what the sentiment looks like, why it made the list. Open the app once, read for two minutes, get on with your day.</p>
+          <p>It is not a robo-adviser. It is not a trading platform. It is a quiet, opinionated daily read for people who enjoy the game.</p>
 
           <h2>Tiers</h2>
-          <ul>
+          <ul class="tiers">
             <li><strong>Free</strong> — the day's #1 pick, plus a 7-day history of past free picks</li>
-            <li><strong>Premium ($4.99 / month)</strong> — all 5 daily picks and the full history view</li>
-            <li><strong>One-off ($0.99)</strong> — unlock an extra pick without a subscription</li>
+            <li><strong>Premium · $4.99 / month</strong> — all 5 daily picks and the full history</li>
+            <li><strong>One-off · $0.99</strong> — unlock an extra pick without subscribing</li>
           </ul>
 
-          <h2>How it's built</h2>
+          <h2>What it isn't</h2>
           <ul>
-            <li>iOS app written in Swift and SwiftUI</li>
-            <li>Backend on Cloudflare Workers (Node.js, deployed via Wrangler)</li>
-            <li>Sentiment via <code>@huggingface/inference</code>; market data via Finnhub and Polygon</li>
-            <li>Subscriptions handled with RevenueCat and StoreKit 2</li>
+            <li>Not financial advice — Stock Genie hands you opinions, not orders</li>
+            <li>Not a brokerage — picks happen in the app, trades happen elsewhere</li>
+            <li>Not noisy — one batch a day, no push at 3 a.m., no FOMO loops</li>
           </ul>
 
           <div class="sub-links" id="links">
             <div class="sub-links-text">
-              On the web
+              Visit
               <strong>stockgenie.app</strong>
             </div>
             <div class="sub-links-row">
               <a class="btn btn-primary" href="https://stockgenie.app" target="_blank" rel="noopener">
-                Visit stockgenie.app
+                Open Stock Genie
                 <span class="ico" aria-hidden="true">→</span>
               </a>
-              <a class="btn" href="https://fromamerica-llc.com/stockgenie-web/" target="_blank" rel="noopener">Marketing site</a>
             </div>
           </div>
 
@@ -113,7 +112,7 @@
 
         <div class="footer-colophon">
           <p class="footer-colophon-title">§ Colophon</p>
-          <p>This page is set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono, served as static HTML and CSS. No frameworks, no analytics, no trackers.</p>
+          <p>Set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono. No tracking, no analytics — just words on a page.</p>
         </div>
 
         <div class="footer-stamp-wrap" aria-label="Made in the United States of America, 2025">

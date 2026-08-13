@@ -1,232 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FROM AMERICA LLC — an independent software studio shipping a small number of careful products for iPhone and the web." />
-  <meta name="theme-color" content="#f3efe5" />
-  <meta property="og:title" content="FROM AMERICA LLC — Software, literally from America." />
-  <meta property="og:description" content="An independent software studio shipping a small number of careful products for iPhone and the web." />
-  <meta property="og:image" content="assets/logo.png" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <title>FROM AMERICA LLC — Software, literally from America.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From America LLC — Software, literally from America.</title>
+<meta name="description" content="Software, literally from America. An independent studio making apps for iPhone and tools for the web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <a class="header-mark" href="#top" aria-label="From America LLC, home">
-          <img src="assets/logo.png" alt="" class="header-logo" />
-          <span class="header-name">From America</span>
-          <span class="header-suffix">LLC</span>
-        </a>
-        <span class="header-rule" aria-hidden="true"></span>
-        <a class="header-action" href="mailto:eric@fromamerica-llc.com">
-          Get in touch
-          <span class="ico" aria-hidden="true">↗</span>
-        </a>
-      </div>
+
+<header class="masthead">
+  <div class="ticker" aria-hidden="true"><div class="ticker__track" id="ticker"></div></div>
+
+  <div class="masthead__body">
+    <h1 class="wordmark">FROM<span class="wordmark__br"></span>AMERICA</h1>
+    <nav class="masthead__nav">
+      <button class="link" id="play-all" type="button">Supercut</button>
+      <a class="link" href="./about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wall" id="wall" aria-label="Clips"></main>
+
+<div class="sentinel" id="sentinel" aria-hidden="true"></div>
+
+<p class="empty" id="empty" hidden>Nothing here yet.</p>
+
+<button class="sound" id="sound" type="button" hidden>Sound off &mdash; click anywhere</button>
+
+<div class="theater" id="theater" hidden role="dialog" aria-modal="true" aria-label="Player">
+  <button class="theater__close" id="theater-close" type="button" aria-label="Close">Close</button>
+  <video id="theater-video" playsinline></video>
+  <div class="theater__meta">
+    <p class="theater__said" id="theater-said"></p>
+    <p class="theater__src" id="theater-src"></p>
+    <div class="theater__nav">
+      <button id="theater-prev" type="button">Prev</button>
+      <button id="theater-pause" type="button">Pause</button>
+      <button id="theater-next" type="button">Next</button>
+      <a id="theater-link" href="#" target="_blank" rel="noopener">Source</a>
     </div>
-  </header>
+  </div>
+</div>
 
-  <main id="top">
-
-    <section class="hero">
-      <div class="container">
-        <p class="hero-kicker">
-          <span class="kicker-mark" aria-hidden="true"></span>
-          Independent software studio · United States · 2025
-        </p>
-        <h1 class="hero-statement">
-          Software,<br />
-          literally<br />
-          from America.
-        </h1>
-        <p class="hero-lede">
-          FROM AMERICA LLC is a small studio making a careful number of products for iPhone and the web. One founder. No venture capital. One quiet release at a time.
-        </p>
-      </div>
-    </section>
-
-    <section class="meta-strip" aria-label="Studio at a glance">
-      <div class="container">
-        <dl class="meta-grid">
-          <div>
-            <dt>Founded</dt>
-            <dd>2025</dd>
-          </div>
-          <div>
-            <dt>Location</dt>
-            <dd>United States</dd>
-          </div>
-          <div>
-            <dt>Team</dt>
-            <dd>One founder</dd>
-          </div>
-          <div>
-            <dt>Makes</dt>
-            <dd>Apps &amp; tools</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="index" id="work">
-      <div class="container">
-        <header class="index-head">
-          <p class="kicker"><span class="kicker-sigil">§</span> Index of work</p>
-          <h2 class="h2">Four useful things, made with care.</h2>
-        </header>
-
-        <ol class="works">
-
-          <li class="work">
-            <a class="work-link" href="stockgenie.html" aria-label="Stock Genie — daily AI stock picks for iPhone">
-              <span class="work-num">01</span>
-              <span class="work-row">
-                <span class="work-name">Stock Genie</span>
-                <span class="work-tags">iPhone · Live · 2025</span>
-              </span>
-              <span class="work-desc">A fresh set of AI-curated stock picks every trading day at 9:00 AM Eastern. Quiet, opinionated, made for hobby traders.</span>
-              <span class="work-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-
-          <li class="work">
-            <a class="work-link" href="picaius.html" aria-label="Picaius — an offline photo editor for iPhone">
-              <span class="work-num">02</span>
-              <span class="work-row">
-                <span class="work-name">Picaius</span>
-                <span class="work-tags">iPhone · MVP · 2025</span>
-              </span>
-              <span class="work-desc">A pro-level photo editor that lives entirely on your phone. Real layers, real brushes, real undo — fast, private, works offline.</span>
-              <span class="work-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-
-          <li class="work">
-            <a class="work-link" href="freelock.html" aria-label="FreeLock — a focus tool that locks apps behind a physical card">
-              <span class="work-num">03</span>
-              <span class="work-row">
-                <span class="work-name">FreeLock</span>
-                <span class="work-tags">iPhone · Live · 2024</span>
-              </span>
-              <span class="work-desc">Lock distracting apps behind a physical card on your desk. Tap to unlock. Real friction beats willpower.</span>
-              <span class="work-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-
-          <li class="work">
-            <a class="work-link" href="https://fromamerica.pages.dev" target="_blank" rel="noopener" aria-label="From America — an archive of every recorded instance of the phrase">
-              <span class="work-num">04</span>
-              <span class="work-row">
-                <span class="work-name">From America</span>
-                <span class="work-tags">Web · Live · 2026</span>
-              </span>
-              <span class="work-desc">An archive of a phrase. Every clip is someone saying the words "from America", cut to the word. Captions locate it; audio confirms it.</span>
-              <span class="work-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-
-    <section class="founder" id="about">
-      <div class="container">
-        <div class="founder-grid">
-          <div class="founder-text">
-            <p class="kicker"><span class="kicker-sigil">§</span> From the founder</p>
-            <p>I'm Eric Spencer. FROM AMERICA LLC is my small studio — one person, no venture capital, no five-year roadmap. I make apps for iPhone and tools for the web. The goal is to ship a small number of careful things and stand behind them.</p>
-            <p>Each product is owned end-to-end by the same hands that conceived it. The throughline across all of them is the same — real problems, careful work, and the patience to do a small number of things well.</p>
-            <p>If something here is useful to you, or you have a project worth making, I'd like to hear about it.</p>
-            <p class="founder-sign">— Eric</p>
-          </div>
-
-          <dl class="founder-register">
-            <div>
-              <dt>Founded</dt>
-              <dd>2025 · United States</dd>
-            </div>
-            <div>
-              <dt>Founder</dt>
-              <dd>Eric Spencer · <a href="https://ericspencer.us" target="_blank" rel="noopener">ericspencer.us</a></dd>
-            </div>
-            <div>
-              <dt>Makes</dt>
-              <dd>Apps for iPhone &amp; tools for the web</dd>
-            </div>
-            <div>
-              <dt>Open source</dt>
-              <dd><a href="https://github.com/from-america" target="_blank" rel="noopener">github.com/from-america</a></dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:eric@fromamerica-llc.com">eric@fromamerica-llc.com</a></dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing" id="contact">
-      <div class="container">
-        <p class="closing-kicker"><span class="kicker-sigil">§</span> Get in touch</p>
-        <a class="closing-link" href="mailto:eric@fromamerica-llc.com">
-          eric@fromamerica-llc.com
-          <span class="ico" aria-hidden="true">↗</span>
-        </a>
-        <p class="closing-sub">
-          The studio takes a small number of collaborations each year.
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-
-        <div class="footer-mark">
-          <div class="footer-mark-row">
-            <img src="assets/logo.png" alt="" class="footer-logo" />
-            <span class="footer-mark-name">From America LLC</span>
-          </div>
-          <p class="footer-tagline">Software that's literally from America.</p>
-        </div>
-
-        <div class="footer-colophon">
-          <p class="footer-colophon-title">§ Colophon</p>
-          <p>Set in <a href="https://www.ibm.com/plex/" target="_blank" rel="noopener">IBM Plex Sans</a> and IBM Plex Mono. No tracking, no analytics — just words on a page.</p>
-        </div>
-
-        <div class="footer-stamp-wrap" aria-label="Made in the United States of America, 2025">
-          <span class="stamp">
-            <span class="stamp-star" aria-hidden="true">★</span>
-            <span>Made in</span>
-            <span class="stamp-strong">USA</span>
-            <span class="stamp-divider" aria-hidden="true"></span>
-            <span>MMXXV</span>
-          </span>
-        </div>
-
-      </div>
-
-      <div class="footer-meta">
-        <span>© <span id="year"></span> From America LLC · All rights reserved</span>
-        <span>fromamerica-llc.com</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script src="app.js"></script>
 </body>
 </html>
